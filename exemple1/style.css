@@ -1,3 +1,5 @@
+@import "telephone.css" screen and (min-width : 150px) and (max-width:500px);
+
 body {
     background-color: #F99;/*Rouge*/
   }
@@ -17,12 +19,26 @@ body {
 }
   
 /*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
+
 @media screen and (max-width: 780px) {
     body{
-        background-color: #848; /*Violet*/
+        background-color: #848; 
 }
     .conteneur-flex{
         background-color: red;
-        /*flex-flow: column wrap;*/
+    
+    }
+    .element-flex:last-child {
+        background-color: aquamarine;
     }
 }
+
+@media screen and (min-width:150px) and (max-width:500px){
+    body {
+        background-color: black;
+    }
+    .conteneur-flex {
+        flex-flow: column;
+    }
+} 
+
